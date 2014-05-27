@@ -324,8 +324,9 @@ p code {
   color: #93a1a1;
 }
 
-pre xcode, pre.src {
+pre xcode, pre.src, pre.example, code:not([class]) {
   @include rounded;
+  clear:both;
   padding: 0.5em 0.4em 0.5em 0.3em;
   background-color: #002b36;
   color: #93a1a1;

@@ -15,9 +15,9 @@
 }
 #navigation #main-menu a {
   text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
+  ///&:hover {
+  ///  text-decoration: underline;
+  ///}
 }
 
 ul li.expanded {
@@ -73,12 +73,19 @@ li a.active {
     margin: 0;
     padding: 0;
     text-align: left;
-    
+
     li { /* A simple method to get navigation links to appear in one line. */
       float: left;
       padding: 0 10px 0 0;
       list-style-type: none;
       list-style-image: none;
+    }
+    li a {
+      padding: 0.5em 1em 0.5em 1em;
+    }
+    li a:hover {
+      background: lighten($header-color, 30%);
+      color: yellow;
     }
   }
 }
